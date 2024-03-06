@@ -31,7 +31,7 @@ export default{
         </div>
 
         <div id="right">
-            <input type="search">
+            <input type="search" v-model="store.search">
             <input type="button" value="cerca" @click="$emit('cercaFilm')">
         </div>
 
