@@ -32,6 +32,7 @@ export default{
 
         <div id="right">
             <input type="search">
+            <input type="button" value="cerca" @click="$emit('cercaFilm')">
         </div>
 
 
