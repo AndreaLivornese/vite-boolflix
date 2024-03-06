@@ -40,7 +40,7 @@ export default{
 
 </template>
 
-<style>
+<style lang="scss">
 
 nav{
     display: flex;

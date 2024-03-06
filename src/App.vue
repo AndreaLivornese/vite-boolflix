@@ -2,11 +2,13 @@
 
 import {store} from "../src/store";
 import AppNav from "./components/AppNav.vue"
+import AppGrid from "./components/AppGrid.vue"
 
 export default{
 
   components:{
     AppNav,
+    AppGrid,
   },
 
   data(){
@@ -38,8 +40,10 @@ export default{
 
   <AppNav @cercaFilm="searchFilm"></AppNav>
 
+  <AppGrid></AppGrid>
+
 </template>
 
-<style>
+<style lang="scss">
 
 </style>
