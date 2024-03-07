@@ -4,6 +4,8 @@ export default{
     name:"AppFilmItem",
 
    props:{
+    currentSearch: Object,
+    imagePath:String,
     title:String,
     originalTitle:String,
     lang:String,
@@ -15,7 +17,7 @@ export default{
     return{
 
     }
-  }
+  },
 }
 
 </script>
@@ -23,6 +25,10 @@ export default{
 <template>
 
         <div class="card">
+
+            <div class="img">
+                <img :src="'https://image.tmdb.org/t/p/w300/' + imagePath">
+            </div>
 
             <div class="title">
                 {{title}}
@@ -37,7 +43,7 @@ export default{
                     alt="bandiera">
             </div>
             <div class="rating">
-                {{ rating }}
+                <i v-for="n in Math.floor(rating / 2 ) " class="fa-solid fa-star star"></i>
             </div>
 
         </div>
@@ -59,7 +65,16 @@ export default{
 
     &>div{
         width: calc(100% / 2);
+
+        .img img{
+            width: 100%;
+        }
+
     }
+}
+
+.star{
+    color:yellow;
 }
 
 

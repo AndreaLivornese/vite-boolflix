@@ -25,18 +25,20 @@ export default{
 
     <AppFilmItem
         v-for="currentFilm in store.films"
-        :title="currentFilm.title"
-        :originalTitle="currentFilm.original_title"
-        :lang="currentFilm.original_language"
-        :rating="currentFilm.vote_average"
+        :imagePath=currentFilm.backdrop_path
+        :title=currentFilm.title
+        :originalTitle=currentFilm.original_title
+        :lang=currentFilm.original_language
+        :rating=currentFilm.vote_average
     >
     </AppFilmItem>
     <AppFilmItem
         v-for="currentSerie in store.serieTv"
-        :title="currentSerie.name"
-        :originalTitle="currentSerie.original_name"
-        :lang="currentSerie.original_language"
-        :rating="currentSerie.vote_average"
+        :imagePath=currentSerie.backdrop_path
+        :title=currentSerie.name
+        :originalTitle=currentSerie.original_name
+        :lang=currentSerie.original_language
+        :rating=currentSerie.vote_average
     >
     </AppFilmItem>
 
