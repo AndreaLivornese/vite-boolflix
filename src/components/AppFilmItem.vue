@@ -31,7 +31,10 @@ export default{
                {{originalTitle}}
             </div>
             <div class="lang">
-               {{lang}}
+                <img
+                    :src="'https://flagcdn.com/w20/' + lang + '.png'"
+                    width="20"
+                    alt="bandiera">
             </div>
             <div class="rating">
                 {{ rating }}

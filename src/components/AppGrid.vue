@@ -31,6 +31,14 @@ export default{
         :rating="currentFilm.vote_average"
     >
     </AppFilmItem>
+    <AppFilmItem
+        v-for="currentSerie in store.serieTv"
+        :title="currentSerie.name"
+        :originalTitle="currentSerie.original_name"
+        :lang="currentSerie.original_language"
+        :rating="currentSerie.vote_average"
+    >
+    </AppFilmItem>
 
    </div>
 
