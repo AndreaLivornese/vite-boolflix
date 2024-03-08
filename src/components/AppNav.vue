@@ -12,13 +12,19 @@ export default{
   },
   methods:{
 
+    choiceHome(){
+        store.choice = 'Home';
+    },
+
     choiceFilms(){
-        store.choice = 'Film';
+            store.choice = 'Film';
     },
 
     choiceSeries(){
-        store.choice = 'Serie Tv';
+            store.choice = 'Serie Tv';
     }
+
+
 
   }
 }
@@ -34,7 +40,7 @@ export default{
             </div>
             <div class="links">
                 <ul>
-                    <li >Home</li>
+                    <li @click="choiceHome">Home</li>
                     <li @click="choiceFilms">Film</li>
                     <li @click="choiceSeries">Serie TV</li>
                 </ul>
@@ -43,7 +49,7 @@ export default{
 
         <div id="right">
             <input type="search" v-model="store.search">
-            <input type="button" value="cerca" @click="$emit('cercaFilm')">
+            <input type="button" value="cerca" @click="$emit('cercaFilm'), choiceHome()">
         </div>
 
 

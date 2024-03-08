@@ -40,6 +40,17 @@ export default{
       store.search='';
     }
 
+  },
+  mounted(){
+
+    // axios.get(`https://api.themoviedb.org/3/tv/popular?api_key=39fd68787b3ecc4c7f99e2428228f89c?language=en-US&page=1`).then((res)=>{
+    //     console.log(res);
+
+    //     store.popular = res.data.results;
+
+    //     console.log(store.popular);
+    //   });
+
   }
 
 }
