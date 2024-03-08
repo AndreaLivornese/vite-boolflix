@@ -28,6 +28,7 @@ export default{
         <div class="card">
 
             <div class="img">
+                <div class="sfondo" :style="imagePath == null ? 'background-color: black;' : ''"></div>
                 <img :src="'https://image.tmdb.org/t/p/w342/' + imagePath">
             </div>
 
@@ -65,7 +66,7 @@ export default{
 .card{
     position:relative;
 
-    width: calc(100% / 4 - 10px / 4 * 3);
+    width: calc(100% / 8 - 10px / 8 * 7);
 
     transition: 1s ;
 
@@ -76,6 +77,16 @@ export default{
 
     .img{
         width: 100%;
+
+        .sfondo{
+            position: absolute;
+            top:0;
+            left:0;
+            z-index: 1;
+
+            width: 100%;
+            height: 100%;
+        }
 
         img{
             display: block;

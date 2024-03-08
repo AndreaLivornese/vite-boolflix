@@ -19,7 +19,7 @@ export default{
     <nav>
         <div id="left">
             <div class="logo">
-                <img src="" alt="logo">
+                <img src="https://image.tmdb.org/t/p/w92/wwemzKWzjKYJFfCeiB57q3r4Bcm.png" alt="logo">
             </div>
             <div class="links">
                 <ul>
@@ -45,6 +45,7 @@ export default{
 nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     padding:15px 30px;
 

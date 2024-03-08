@@ -54,6 +54,8 @@ export default{
     display:flex;
     gap:10px;
     flex-wrap: wrap;
+
+    padding:30px 10px;
 }
 
 </style>
