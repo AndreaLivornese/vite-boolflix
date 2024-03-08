@@ -25,7 +25,7 @@ export default{
 
     <AppFilmItem
         v-for="currentFilm in store.films"
-        :imagePath=currentFilm.backdrop_path
+        :imagePath=currentFilm.poster_path
         :title=currentFilm.title
         :originalTitle=currentFilm.original_title
         :lang=currentFilm.original_language
@@ -35,7 +35,7 @@ export default{
     </AppFilmItem>
     <AppFilmItem
         v-for="currentSerie in store.serieTv"
-        :imagePath=currentSerie.backdrop_path
+        :imagePath=currentSerie.poster_path
         :title=currentSerie.name
         :originalTitle=currentSerie.original_name
         :lang=currentSerie.original_language
