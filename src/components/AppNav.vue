@@ -9,6 +9,17 @@ export default{
     return{
       store,
     }
+  },
+  methods:{
+
+    choiceFilms(){
+        store.choice = 'Film';
+    },
+
+    choiceSeries(){
+        store.choice = 'Serie Tv';
+    }
+
   }
 }
 
@@ -23,9 +34,9 @@ export default{
             </div>
             <div class="links">
                 <ul>
-                    <li>Home</li>
-                    <li>Film</li>
-                    <li>Serie TV</li>
+                    <li >Home</li>
+                    <li @click="choiceFilms">Film</li>
+                    <li @click="choiceSeries">Serie TV</li>
                 </ul>
             </div>
         </div>
@@ -58,6 +69,11 @@ nav{
             display: flex;
 
             gap:15px;
+
+            li{
+                user-select: none;
+                cursor:pointer;
+            }
         };
     }
 
