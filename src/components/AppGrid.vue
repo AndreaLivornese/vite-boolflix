@@ -30,6 +30,7 @@ export default{
         :originalTitle=currentFilm.original_title
         :lang=currentFilm.original_language
         :rating=currentFilm.vote_average
+        :trama=currentFilm.overview
     >
     </AppFilmItem>
     <AppFilmItem
@@ -39,6 +40,7 @@ export default{
         :originalTitle=currentSerie.original_name
         :lang=currentSerie.original_language
         :rating=currentSerie.vote_average
+        :trama=currentSerie.overview
     >
     </AppFilmItem>
 
